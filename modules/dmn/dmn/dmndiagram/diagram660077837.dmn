@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" id="dish" name="Dish" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="Decision_02omf2c">
+    <informationRequirement id="InformationRequirement_087kfr7">
+      <requiredInput href="#InputData_17c29v8" ></requiredInput>
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_1sucf4i">
+      <requiredInput href="#InputData_17c29v8" ></requiredInput>
+    </informationRequirement>
+    <authorityRequirement id="AuthorityRequirement_0181yf0">
+      <requiredAuthority href="#KnowledgeSource_0d8wl9d" ></requiredAuthority>
+    </authorityRequirement>
+  </decision>
+  <inputData id="InputData_0rrll8l" />
+  <inputData id="InputData_17c29v8" />
+  <knowledgeSource id="KnowledgeSource_0d8wl9d" ></knowledgeSource>
+  <decision id="Decision_03lw81q" ></decision>
+  <textAnnotation id="TextAnnotation_0cixlao" ></textAnnotation>
+  <association id="Association_1i9ojhs">
+    <sourceRef href="#TextAnnotation_0cixlao" ></sourceRef>
+    <targetRef href="#KnowledgeSource_0d8wl9d" ></targetRef>
+  </association>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="DMNDiagram_0bfljym">
+      <dmndi:DMNShape id="DMNShape_00bapm5" dmnElementRef="Decision_02omf2c">
+        <dc:Bounds height="80" width="180" x="120" y="30" ></dc:Bounds>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_0kddibr" dmnElementRef="InputData_0rrll8l">
+        <dc:Bounds height="45" width="125" x="497" y="148" ></dc:Bounds>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_1m9ggsz" dmnElementRef="InputData_17c29v8">
+        <dc:Bounds height="45" width="125" x="147" y="267" ></dc:Bounds>
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_1i0mpi7" dmnElementRef="InformationRequirement_087kfr7">
+        <di:waypoint x="210" y="267" ></di:waypoint>
+        <di:waypoint x="180" y="130" ></di:waypoint>
+        <di:waypoint x="180" y="110" ></di:waypoint>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="DMNEdge_1popn43" dmnElementRef="InformationRequirement_1sucf4i">
+        <di:waypoint x="210" y="267" ></di:waypoint>
+        <di:waypoint x="240" y="130" ></di:waypoint>
+        <di:waypoint x="240" y="110" ></di:waypoint>
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_0b7uiu7" dmnElementRef="KnowledgeSource_0d8wl9d">
+        <dc:Bounds height="63" width="100" x="400" y="258" ></dc:Bounds>
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0aes5tz" dmnElementRef="AuthorityRequirement_0181yf0">
+        <di:waypoint x="415" y="258" ></di:waypoint>
+        <di:waypoint x="254" y="110" ></di:waypoint>
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_08nbg09" dmnElementRef="TextAnnotation_0cixlao">
+        <dc:Bounds height="80" width="100" x="390" y="20" ></dc:Bounds>
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_10nnqs7" dmnElementRef="Association_1i9ojhs">
+        <di:waypoint x="442" y="100" ></di:waypoint>
+        <di:waypoint x="449" y="258" ></di:waypoint>
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_0lnev6f" dmnElementRef="Decision_03lw81q">
+        <dc:Bounds height="80" width="180" x="550" y="20" ></dc:Bounds>
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/1.0" id="dish" name="Dish" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="Decision_10qbtz1">
+    <extensionElements>
+      <biodi:bounds x="220" y="130" width="180" height="80" ></biodi:bounds>
+    </extensionElements>
+  </decision>
+  <inputData id="InputData_0m34r9n">
+    <extensionElements>
+      <biodi:bounds x="248" y="258" width="125" height="45" ></biodi:bounds>
+    </extensionElements>
+  </inputData>
+  <inputData id="InputData_073lxuu">
+    <extensionElements>
+      <biodi:bounds x="238" y="48" width="125" height="45" ></biodi:bounds>
+    </extensionElements>
+  </inputData>
+</definitions>

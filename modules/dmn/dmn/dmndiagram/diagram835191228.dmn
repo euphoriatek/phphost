@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/1.0" id="dish" name="Dish" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="Decision_046fmal" name="something  here">
+    <extensionElements>
+      <biodi:bounds x="200" y="-200" width="180" height="80" ></biodi:bounds>
+    </extensionElements>
+  </decision>
+  <decision id="Decision_0l0xtpg" name="plm">
+    <extensionElements>
+      <biodi:bounds x="410" y="-10" width="180" height="80" ></biodi:bounds>
+      <biodi:edge source="Decision_046fmal">
+        <biodi:waypoints x="334" y="-120" ></biodi:waypoints>
+        <biodi:waypoints x="456" y="-10" ></biodi:waypoints>
+      </biodi:edge>
+    </extensionElements>
+    <informationRequirement>
+      <requiredDecision href="#Decision_046fmal" ></requiredDecision>
+    </informationRequirement>
+  </decision>
+  <businessKnowledgeModel id="BusinessKnowledgeModel_0u8wxca" name="box">
+    <extensionElements>
+      <biodi:bounds x="193" y="-3" width="135" height="46" ></biodi:bounds>
+    </extensionElements>
+  </businessKnowledgeModel>
+  <textAnnotation id="TextAnnotation_1xu8jio">
+    <extensionElements>
+      <biodi:bounds x="500" y="-200" width="100" height="80" ></biodi:bounds>
+    </extensionElements>
+    <text>another thing here</text>
+  </textAnnotation>
+  <association id="Association_1rsjdic">
+    <extensionElements>
+      <biodi:edge source="Decision_046fmal">
+        <biodi:waypoints x="380" y="-160" ></biodi:waypoints>
+        <biodi:waypoints x="500" y="-160" ></biodi:waypoints>
+      </biodi:edge>
+    </extensionElements>
+    <sourceRef href="#Decision_046fmal" ></sourceRef>
+    <targetRef href="#TextAnnotation_1xu8jio" ></targetRef>
+  </association>
+</definitions>
