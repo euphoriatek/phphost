@@ -2,7 +2,7 @@
   "functions": {
     "api/index.php": {
       "runtime": "vercel-php@0.6.0",
-      "memory": 1024,
+      "memory": 250,
       "maxDuration": 10
     }
   }
