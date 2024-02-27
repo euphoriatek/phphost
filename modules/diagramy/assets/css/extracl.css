@@ -1,9 +1,0 @@
-    .map_grid{
-        background: #eee;
-    }
-    .cardbox img {
-		border-radius:0;
-		height: auto;
-		transform: scale(2.0);
-		margin-top: 50px;
-	}	

@@ -1,6 +1,0 @@
-.idea
-*.pdf
-*.zip
-services/*
-services/index.html
-migrations/*.Identifier
